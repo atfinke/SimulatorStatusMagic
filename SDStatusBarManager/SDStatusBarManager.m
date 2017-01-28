@@ -24,8 +24,6 @@
 
 #import <UIKit/UIKit.h>
 #import "SDStatusBarManager.h"
-#import "SDStatusBarOverriderPre8_3.h"
-#import "SDStatusBarOverriderPost8_3.h"
 #import "SDStatusBarOverriderPost9_0.h"
 #import "SDStatusBarOverriderPost9_3.h"
 #import "SDStatusBarOverriderPost10_0.h"
@@ -134,10 +132,9 @@ static NSString * const SDStatusBarManagerTimeStringKey = @"time_string";
     overrider = [SDStatusBarOverriderPost9_3 new];
   } else if ([pi isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){ 9, 0, 0 }]) {
     overrider = [SDStatusBarOverriderPost9_0 new];
-  } else if ([pi isOperatingSystemAtLeastVersion:(NSOperatingSystemVersion){ 8, 3, 0 }]) {
-    overrider = [SDStatusBarOverriderPost8_3 new];
   } else {
-    overrider = [SDStatusBarOverriderPre8_3 new];
+    NSLog(@"This app works only with iOS 9.0 and greater simulators. Exiting.");
+    exit(0);
   }
   return overrider;
 }
