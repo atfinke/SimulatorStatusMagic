@@ -22,16 +22,16 @@
 // SOFTWARE.
 // --------------------------------------------------------------------------------
 
-#import "ViewController.h"
+#import "OverrideViewController.h"
 #import "SDStatusBarManager.h"
 
-@interface ViewController () 
+@interface OverrideViewController () 
 @property (strong, nonatomic) IBOutlet UIButton *overrideButton;
 @property (strong, nonatomic) IBOutlet UITextField *timeStringTextField;
 @property (strong, nonatomic) IBOutlet UISegmentedControl *bluetoothSegmentedControl;
 @end
 
-@implementation ViewController
+@implementation OverrideViewController
 
 #pragma mark View lifecycle
 - (void)viewDidLoad
@@ -73,13 +73,6 @@
 {
   // Note: The order of the segments should match the definition of SDStatusBarManagerBluetoothState
   [[SDStatusBarManager sharedInstance] setBluetoothState:sender.selectedSegmentIndex];
-}
-
-#pragma mark Text field delegate
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-  [textField resignFirstResponder];
-  return YES;
 }
 
 #pragma mark UI helpers
