@@ -23,6 +23,7 @@
 
 /* Begin PBXBuildFile section */
 		110F24E719E4610E00012FD7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 110F24E519E4610E00012FD7 /* Localizable.strings */; };
+		144A1014202F66C5003DB51A /* SimulatorStatusMagicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 144A1013202F66C5003DB51A /* SimulatorStatusMagicUITests.swift */; };
 		441955841F152DF700F1F39B /* SDStatusBarOverriderPost11_0.m in Sources */ = {isa = PBXBuildFile; fileRef = 441955831F152DF700F1F39B /* SDStatusBarOverriderPost11_0.m */; };
 		441955851F15330D00F1F39B /* SDStatusBarOverriderPost11_0.m in Sources */ = {isa = PBXBuildFile; fileRef = 441955831F152DF700F1F39B /* SDStatusBarOverriderPost11_0.m */; };
 		448EAEAA1B3B326100A09FBC /* SDStatusBarOverriderPost9_0.m in Sources */ = {isa = PBXBuildFile; fileRef = 448EAEA91B3B326100A09FBC /* SDStatusBarOverriderPost9_0.m */; };
@@ -55,6 +56,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		144A1016202F66C5003DB51A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5516356019E3FF3D001F636D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5516356719E3FF3D001F636D;
+			remoteInfo = SimulatorStatusMagic;
+		};
 		72ECF7591BAAC4A20071D401 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5516356019E3FF3D001F636D /* Project object */;
@@ -81,6 +89,9 @@
 /* Begin PBXFileReference section */
 		110F24E319E45FFE00012FD7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		110F24E619E4610E00012FD7 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		144A1011202F66C5003DB51A /* SimulatorStatusMagicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimulatorStatusMagicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		144A1013202F66C5003DB51A /* SimulatorStatusMagicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorStatusMagicUITests.swift; sourceTree = "<group>"; };
+		144A1015202F66C5003DB51A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		441955821F152DF600F1F39B /* SDStatusBarOverriderPost11_0.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDStatusBarOverriderPost11_0.h; sourceTree = "<group>"; };
 		441955831F152DF700F1F39B /* SDStatusBarOverriderPost11_0.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDStatusBarOverriderPost11_0.m; sourceTree = "<group>"; };
 		448EAEA81B3B326100A09FBC /* SDStatusBarOverriderPost9_0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDStatusBarOverriderPost9_0.h; sourceTree = "<group>"; };
@@ -114,6 +125,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		144A100E202F66C5003DB51A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5516356519E3FF3D001F636D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,12 +149,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		144A1012202F66C5003DB51A /* SimulatorStatusMagicUITests */ = {
+			isa = PBXGroup;
+			children = (
+				144A1013202F66C5003DB51A /* SimulatorStatusMagicUITests.swift */,
+				144A1015202F66C5003DB51A /* Info.plist */,
+			);
+			path = SimulatorStatusMagicUITests;
+			sourceTree = "<group>";
+		};
 		5516355F19E3FF3D001F636D = {
 			isa = PBXGroup;
 			children = (
 				5516356A19E3FF3D001F636D /* SimulatorStatusMagic */,
 				DDACF30819E83F06004FCB30 /* SDStatusBarManager */,
 				72ECF7261BAAC33A0071D401 /* SimulatorStatusMagiciOS */,
+				144A1012202F66C5003DB51A /* SimulatorStatusMagicUITests */,
 				5516356919E3FF3D001F636D /* Products */,
 			);
 			indentWidth = 2;
@@ -149,6 +177,7 @@
 			children = (
 				5516356819E3FF3D001F636D /* SimulatorStatusMagic.app */,
 				72ECF7251BAAC33A0071D401 /* SimulatorStatusMagiciOS.framework */,
+				144A1011202F66C5003DB51A /* SimulatorStatusMagicUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,6 +275,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		144A1010202F66C5003DB51A /* SimulatorStatusMagicUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 144A101A202F66C5003DB51A /* Build configuration list for PBXNativeTarget "SimulatorStatusMagicUITests" */;
+			buildPhases = (
+				144A100D202F66C5003DB51A /* Sources */,
+				144A100E202F66C5003DB51A /* Frameworks */,
+				144A100F202F66C5003DB51A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				144A1017202F66C5003DB51A /* PBXTargetDependency */,
+			);
+			name = SimulatorStatusMagicUITests;
+			productName = SimulatorStatusMagicUITests;
+			productReference = 144A1011202F66C5003DB51A /* SimulatorStatusMagicUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		5516356719E3FF3D001F636D /* SimulatorStatusMagic */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5516358B19E3FF3D001F636D /* Build configuration list for PBXNativeTarget "SimulatorStatusMagic" */;
@@ -288,9 +335,16 @@
 		5516356019E3FF3D001F636D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Shiny Development";
 				TargetAttributes = {
+					144A1010202F66C5003DB51A = {
+						CreatedOnToolsVersion = 9.2;
+						DevelopmentTeam = 72S993BNAV;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5516356719E3FF3D001F636D;
+					};
 					5516356719E3FF3D001F636D = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
@@ -319,11 +373,19 @@
 				5516356719E3FF3D001F636D /* SimulatorStatusMagic */,
 				72ECF7241BAAC33A0071D401 /* SimulatorStatusMagiciOS */,
 				72ECF7551BAAC49C0071D401 /* SimulatorStatusMagicUniversalFramework */,
+				144A1010202F66C5003DB51A /* SimulatorStatusMagicUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		144A100F202F66C5003DB51A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5516356619E3FF3D001F636D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -361,6 +423,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		144A100D202F66C5003DB51A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				144A1014202F66C5003DB51A /* SimulatorStatusMagicUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5516356419E3FF3D001F636D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,6 +467,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		144A1017202F66C5003DB51A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5516356719E3FF3D001F636D /* SimulatorStatusMagic */;
+			targetProxy = 144A1016202F66C5003DB51A /* PBXContainerItemProxy */;
+		};
 		72ECF75A1BAAC4A20071D401 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 72ECF7241BAAC33A0071D401 /* SimulatorStatusMagiciOS */;
@@ -425,6 +500,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		144A1018202F66C5003DB51A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 72S993BNAV;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SimulatorStatusMagicUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.SimulatorStatusMagicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimulatorStatusMagic;
+			};
+			name = Debug;
+		};
+		144A1019202F66C5003DB51A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 72S993BNAV;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = SimulatorStatusMagicUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.SimulatorStatusMagicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimulatorStatusMagic;
+			};
+			name = Release;
+		};
 		5516358919E3FF3D001F636D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -612,6 +739,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		144A101A202F66C5003DB51A /* Build configuration list for PBXNativeTarget "SimulatorStatusMagicUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				144A1018202F66C5003DB51A /* Debug */,
+				144A1019202F66C5003DB51A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5516356319E3FF3D001F636D /* Build configuration list for PBXProject "SimulatorStatusMagic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
